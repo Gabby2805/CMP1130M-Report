@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<title>Report</title>
+	</head>
+
+	<body>
+	
+		<h1>CMP1130M - Report</h1>
+		<h4>Gabriella Di Gregorio 15624188</h5>
+		<h5><a href="https://gabby2805.github.io/Nickelback/" target="_blank">Website URL</a><br><a href="https://youtu.be/dSE54vFOU4M" target="_blank">Demo Video</a></h5>
+		
+		<h5>Introduction</h5>
+		<p>My task was to create an interactive website for a band that will promote their ethos and style. For this reason, I decided to choose my all-time favourite band, Nickelback, since I knew I would have enough knowledge and experience of them to create a suitable design. Furthermore, after analysing their current website, it was clear that they would be a perfect focus for my project since it is in need of updating to both match their image as a band as well as current web trends.</p>
+		<h5>De Facto Standards</h5>
+		<p>De facto standards are also known as market-driven standards because although they are not official in terms of the law or a governing organization, they are widely adopted by an industry and its customers. Since these standards arise from popularity, it was important to keep these in mind when designing my website.</p>
+		<h6>Band Websites:</h6>
+		<p>My first step was to identify standards across band websites, so I analysed a couple of my favourites and noted what I liked and disliked about each. This gave me a great starting point since I was able to use these ideas to create moodboards and wireframes for my web design.<br>Themes: I noticed that most of the band sites I looked at had clear and consistent colour schemes, so I ensured that I followed this standard whilst creating my own. Through further research and my prior knowledge of Nickelback, I knew that they have a color scheme emerging through their album covers which is not reflected upon on their current website. Therefore, I made a colour scheme moodboard which I intended to use as a basis for my design. As well as consistent colour schemes, I also observed the importance of consistent font styles and page layout.<br>Audio player: Since a band’s website should promote their vibes and music, I found myself appreciating the ability to sample the artists’ songs whilst doing my analysis. Therefore, I decided that an audio player was to be an essential part of my website.<br>Pages: I also noticed that most of the bands had similar pages on their sites (tours, music, gallery, news, videos) - it was actually very noticeable when any band was missing one of these pages since it felt lacklustre. For this reason, I was able to plan and decide upon my different html files and file structure.</p>
+		<h6>File Structure & Organization:</h6>
+		<p>Through learning about web development, I have noticed that good file structure and organisation is a widely used standard. Although the code isn’t affected by poorly organised files as long as the directories are correct, well-structed files are easier to work with - especially if they were to be edited by other developers besides the author. Since my website is relatively small, it was not necessary to create sub-websites however I did accumulate enough multimedia content to make file structuring essential. For this reason, I made an assets folder containing two folders - one for images and one for music. I further divided the music folder into album folders and if I was to expand my site, I would consider dividing the images folder into more specific categories as well. Since I have a relatively small number of pages, it was appropriate to keep my html files together in the main root folder - I did however use an external stylesheet and script file so these were separated into individual folders to further optimise organisation. A disadvantage of this standard is that it can result in more opportunities for error since setting up the directories in the code becomes more complex. However, I believe the advantage of a file system that can be widely understood and used by other developers far outweighs this drawback.</p>
+		<h6>External vs Internal Styling & Scripting:</h6>
+		<p>Since I wanted my website to be consistent, I decided to use one external CSS and one external JavaScript file to apply to all of my html pages. This meant I could reduce the file size of my html files and therefore reduce the loading time of my webpages which is important for providing users with the best experience. Furthermore, it means that I could re-use the same styles or scripts on different elements and pages through the use of IDs and class names - this both saves time and reduces clutter, making the code easier to understand. The only drawback I experienced was occasionally struggling to think of different names for classes and IDs when I wanted to apply different styling; however, this simply encouraged me to follow another important standard - good naming conventions.</p>
+		<h5>De Jure Standards</h5>
+		<p>“W3C standards define an Open Web Platform for application development that has the unprecedented potential to enable developers to build rich interactive experiences, powered by vast data stores, that are available on any device. Although the boundaries of the platform continue to evolve, industry leaders speak nearly in unison about how HTML5 will be the cornerstone for this platform. W3C develops these technical specifications and guidelines through a process designed to maximize consensus about the content of a technical report, to ensure high technical and editorial quality, and to earn endorsement by W3C and the broader community.” [1] It is important to follow standards in order to reach the widest audience possible since it ensures that people worldwide, using different browsers, and with different needs, are all able to access the same content. I have adhered to these essential standards by using html, CSS and the DOM their accurate syntax and markup.</p>
+		<h6>New HTML5 elements</h5>
+		<p>To futureproof a site, it is important to use the newest html elements wherever possible. Upon reflection, I realise that I could have included more html5 elements and if my site was to undergo further development I would update it to further comply with these new standards. I have identified an issue with the overuse of ‘div’ elements and I would therefore use new elements such as section, aside, header, and footer which are more specific and explanatory than ‘div’ elements alone.</p>
+		<h6>Geolocation</h6>
+		<p>To personalise my website to its users, I included html5 geolocation which allows the user to provide their current location if they desire. I used this tool to provide users to be able to easily locate the tour venues closest to them. This new feature is more effective than native, so it is important to adapt to this latest standard. A major advantage is that it is a cross-platform solution which eliminates the need to spend time on money porting the application to different platforms. However, html5 geolocation does have some drawbacks compared to native such as not being able to track users on the move and only works while the browser is active (does not run in the background). Nevertheless, for the purpose of my website it was clear that geolocation was far more appropriate and easier to implement.</p>
+		<h5>W3C Validation</h5>
+		<p>When I initially validated my first html page, I was presented with a few errors in need of fixing.</p>
+		<img src="Assets/Images/Validation/First/index01.jpg" width="80%">
+		<img src="Assets/Images/Validation/First/index02.jpg" width="80%">
+		<p>Fortunately, many of the errors were similar and therefore easy to fix. I added the ‘lang’ attribute to the html tags on all my pages so that the browser knows the page is in English and can therefore be roughly translated if users require. I also added ‘<meta charset="UTF-8">’. I now realise it is bad practice to have multiple classes assigned to one element, so I changed one of these to an ID since there is only one ‘selected’ on each page. Also, I wasn’t aware that the align attribute was obsolete and actually unnecessary in my case. Since I have the margin set to auto, all images aligned in the centre without this attribute or any extra CSS. Furthermore, I then added alt attributes to my image in case the image could not be displayed for any reason. Lastly, I removed the obsolete ‘frameborder’ attribute and added ‘border=none’ in my CSS. I was able to apply what I had learned from validating my index page to all of my pages and can now prove that all my pages are validated with no errors.</p>
+		<table style="width:90%">
+			<tr>
+				<td><img src="Assets/Images/Validation/Fixed/index.jpg" width="100%"></td>
+				<td><img src="Assets/Images/Validation/Fixed/Gallery.jpg" width="100%"></td>
+				<td><img src="Assets/Images/Validation/Fixed/Music.jpg" width="100%"></td>
+			</tr>
+			<tr>
+				<td><img src="Assets/Images/Validation/Fixed/News.jpg" width="100%"></td>
+				<td><img src="Assets/Images/Validation/Fixed/Tours.jpg" width="100%"></td>
+				<td><img src="Assets/Images/Validation/Fixed/Videos.jpg" width="100%"></td>
+			</tr>
+		</table>
+		<img src="Assets/Images/Validation/First/CSS.jpg" width="80%">
+		<p>I then validated my CSS file and was presented with 4 errors, all of the same nature. I did not realise that ‘float’ is mostly used to set elements left or right and doesn’t apply to centre. So, I was able to fix these errors by removing the float property - my website still looked as intended since ‘margin: auto’ aligns elements in the centre so no additional formatting was necessary.</p>
+		<img src="Assets/Images/Validation/Fixed/CSS.jpg" width="80%">
+		<h5>Interoperability Across Browsers</h5>
+		<p>To maximize the potential audience of a website, it is important to provide support for several popular browsers so that the personal preference of users is catered to. There are 5 most popular browsers which would be classed as standards - Chrome being the most widely used and therefore the main priority [2]. Whilst developing my website, I mostly used Chrome since it is my personal favourite however I ensured to check that it works on other popular browsers. I can prove that my website works as intended on at least 3 major browsers, if not all 5.</p>
+		<img src="Assets/Images/interoperability/Chrome.png" width="80%">
+		<img src="Assets/Images/interoperability/Firefox.png" width="80%">
+		<img src="Assets/Images/interoperability/Edge.png" width="80%">
+		<h5>Conclusion</h5>
+		<p>Unfortunately, time constraints meant that my website is not as customizable, responsive or as up-to-date with new standards as possible. However, I believe I have provided the user with an interactive experience available on different browsers. Users are able to play and pause songs as they like, and their location can be tracked to provide information regarding closest venues. I also believe I have adhered to basic standards such as correct html and CSS as well as some of the more recent attributes including html5 geolocation and CSS3 styling. If I were to further develop my website, I would add more customisability such as being able to create a playlist and drag and drop song order. Furthermore, nowadays it is essential for websites to be well-optimised for mobile devices so given more time, I would make my design responsive to smaller screen sizes in order to maximise usability.</p>
+		<h5>References</h5>
+		<p><a href="https://www.w3.org/standards/" target="_blank">W3C Standards</a><br><a href="https://www.w3schools.com/browsers/" target="_blank">W3C Schools: Most Popular Browsers</a></p>
+		<h5><br><br><a href="https://gabby2805.github.io/Nickelback/" target="_blank">Website URL</a><br><a href="https://youtu.be/dSE54vFOU4M" target="_blank">Demo Video</a></h5>
+	
+	</body>
+	
+</html>

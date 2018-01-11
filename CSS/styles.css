@@ -1,0 +1,38 @@
+body
+{
+	font-family: 'Montserrat', sans-serif;
+	text-align: left;
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: #f0f8ff;
+}
+h1
+{
+	text-align: center;
+}
+h4
+{
+	text-align: center;
+}
+h6
+{
+	font-size: 75%;
+}
+h5
+{
+	font-size: 90%;
+}
+p
+{
+	font-size: 75%;
+}
+img
+{
+	display: block;
+	margin: auto;
+}
+table
+{
+	display: block;
+	margin: auto;
+}
